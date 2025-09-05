@@ -40,12 +40,12 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   https://www.bershka.com/nl/h-woman.html
 
   #### Screenshot(s) van de eerste pagina (small screen): 
-  Bershka [Woman](https://www.bershka.com/nl/h-woman.html) & [Product Page](https://www.bershka.com/nl/cars-capuchonsweater-c0p197716820.html?colorId=401)
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="omschrijving van de pagina">
+  Bershka [Woman](https://www.bershka.com/nl/h-woman.html)
+  <img src=images/womanpage-phone-before.png alt="Screenshot van de Bershka webwinkel voor telefoon, categoriepagina 'Woman'">
 
   #### Screenshot(s) van de tweede pagina (small screen):
-  hier de naam van de pagina  
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="omschrijving van de pagina">
+  Bershka [Product Page](https://www.bershka.com/nl/cars-capuchonsweater-c0p197716820.html?colorId=401)  
+  <img src=images/productpage-phone-before.png alt="Screenshot van de Bershka webwinkel voor telefoon, productpagina 'Lightning McQueen Hoodie'">
  
 </details>
 
