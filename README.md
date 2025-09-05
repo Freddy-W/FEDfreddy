@@ -45,7 +45,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   #### Screenshot(s) van de tweede pagina (small screen):
   Bershka [Product Page](https://www.bershka.com/nl/cars-capuchonsweater-c0p197716820.html?colorId=401)  
-  <img src=images/productpage-phone-before.png alt="Screenshot van de Bershka webwinkel voor telefoon, productpagina 'Lightning McQueen Hoodie'">
+  <img src=images/productpage-phone-before.png alt="Screenshot van de Bershka webwinkel voor telefoon, productpagina 'Lightning McQueen Hoodie'" width= 10% height=10%>
  
 </details>
 
