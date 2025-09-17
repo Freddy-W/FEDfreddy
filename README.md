@@ -109,19 +109,19 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   <ul>
     <li>
-      <h3>Amber<h3>
+      <h4>Amber<h4>
       <p>Klopt mijn breakdownschets</p>
     </li>
     <li>
-      <h3>Aminata<h3>
+      <h4>Aminata<h4>
       <p>Kloppen mijn breakdownschets en de nav van mijn hamburgermenu?</p>
     </li>
     <li>
-      <h3>Tin<h3>
+      <h4>Tin<h4>
       <p>Klopt de breakdownschets en hoe kan ik zorgen dat een image binnen zijn parent blijft</p>
     </li>
     <li>
-      <h3>Freddy<h3>
+      <h4>Freddy<h4>
       <p>Zijn er nog tips over mijn code to zo ver en is het oke dat ik het deel met de links naar men en bskteen oversla. Is er ook nog een stuk code die ik kan           gebruiken om terug te gaan naar de vorige pagina?</p>
     </li>
   </ul>
