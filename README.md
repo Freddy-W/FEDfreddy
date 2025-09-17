@@ -42,11 +42,12 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   #### Screenshot(s) van de eerste pagina (small screen): 
   Bershka [Woman](https://www.bershka.com/nl/h-woman.html)
   <br>
-  <img src=images/womanpage-phone-before.png alt="Screenshot van de Bershka webwinkel voor telefoon, categoriepagina 'Woman'" width= 10% height=10%>
+  <img src=images/women-screenshot.png alt="Screenshot van de Bershka webwinkel voor telefoon, categoriepagina 'Woman'" width= 10% height=10%>
 
   #### Screenshot(s) van de tweede pagina (small screen):
   Bershka [Product Page](https://www.bershka.com/nl/cars-capuchonsweater-c0p197716820.html?colorId=401)  
-  <img src=images/productpage-phone-before.png alt="Screenshot van de Bershka webwinkel voor telefoon, productpagina 'Lightning McQueen Hoodie'" width= 10% height=10%>
+  <img src=images/sweater-pagina.png alt="Screenshot van de Bershka webwinkel voor telefoon, productpagina 'Lightning McQueen Hoodie'" width= 10% height=10%>
+  <img src=images/sweater-pagina-deel2.png alt="Screenshot van de Bershka webwinkel voor telefoon, productpagina 'Lightning McQueen Hoodie' product informatie en footer" width= 10% height=10%>
  
 </details>
 
@@ -59,6 +60,16 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   ### Bevindingen
   Lijst met je bevindingen die in de test naar voren kwamen:
+  <ul>
+    <li>Main content is leeg</li>
+    <li>Veel loze woorden die me niks zeggen</li>
+    <li>It may interest you section heeft een dubbele link</li>
+    <li>Strappy is als stroppy getypt</li>
+    <li>Een lege link</li>
+    <li>De p na 10% off wordt niet opgelezen</li>
+    <li>Screenreader leest dingen die van de pagina af verdwenen zijn</li>
+    <li>Er is geen dark mode</li>
+  </ul>
 
 </details>
 
@@ -90,26 +101,42 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken voor 1<sup>e</sup> voortgang</summary>
 
   ### Stand van zaken
-  hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
+  Code ging goed, maar de hele les aan opdrachten werken werd frustrerend
 
 
   ### Agenda voor meeting
   samen met je groepje opstellen
 
-  | student 1      | student 2          | student 3    | student 4        |
-  | ---            | ---                | ---          | ---              |
-  | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-  | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-  | ...            | ...                | ...          | ...              |
+  <ul>
+    <li>
+      <h3>Amber<h3>
+      <p>Klopt mijn breakdownschets</p>
+    </li>
+    <li>
+      <h3>Aminata<h3>
+      <p>Kloppen mijn breakdownschets en de nav van mijn hamburgermenu?</p>
+    </li>
+    <li>
+      <h3>Tin<h3>
+      <p>Klopt de breakdownschets en hoe kan ik zorgen dat een image binnen zijn parent blijft</p>
+    </li>
+    <li>
+      <h3>Freddy<h3>
+      <p>Zijn er nog tips over mijn code to zo ver en is het oke dat ik het deel met de links naar men en bskteen oversla. Is er ook nog een stuk code die ik kan           gebruiken om terug te gaan naar de vorige pagina?</p>
+    </li>
+  </ul>
 
 
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
 
-  - punt 1
-  - punt 2
-  - nog een punt
-  - ...
+  <ul>
+    <li>overflow: hidden zorgt dat het overschot van een image buiten de parent onzichtbaar wordt</li>
+    <li>H2 bij de carousel moet ook in de ul</li>
+    <li>Voor openende menu's kun je summary en details gebruiken</li>
+    <li>Body en Main zijn in mijn code omgedraaid (ga eens slapen)</li>
+    <li>Voor <- kun je history back gebruiken</li>
+  </ul>
 
 </details>
 
