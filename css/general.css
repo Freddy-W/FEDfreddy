@@ -1,5 +1,44 @@
+:root {
+    --seethrough:#fff0;
+    --white:white;
+    --black:black;
+}
+
+html {
+    margin: 0;
+}
+
 header {
-    color: white;
+    background-color: var(--seethrough);
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 2em;
+}
+
+header button span {
+    background-color: var(--black);
+    border-radius: 25%;
+    color: var(--seethrough);
+    display: flex;
+    flex-direction: column;
+    height: 0.3em;
+    margin: 0.1em;
+    width: 2em;
+}
+
+header label img {
+    height: 1em;
+    aspect-ratio: 1;
+}
+
+header input {
+    background-color: var(--seethrough)
+}
+
+header ul {
+    display: flex;
+    flex-direction: row;
 }
 
 h1 {
