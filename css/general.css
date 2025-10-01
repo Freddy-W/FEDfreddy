@@ -1,7 +1,36 @@
+@font-face {
+    font-family: "ABCWhyte";
+    src: url("../fonts/ABCWhyte-Light.woff2");
+    font-weight: 100;
+}
+
+@font-face {
+    font-family: "ABCWhyte";
+    src: url("../fonts/ABCWhyte-Regular.woff2");
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "ABCWhyte";
+    src: url("../fonts/ABCWhyte-Medium.woff2");
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: "ABCWhyte";
+    src: url("../fonts/ABCWhyte-Bold.woff2");
+    font-weight: 700;
+}
+
 :root {
-    --seethrough:#fff0;
-    --white:white;
-    --black:black;
+    color-scheme: light dark;
+    --seethrough: #fff0;
+    --backg: light-dark(white, black);
+    --label-text: white;
+    --p-text: light-dark(black, white);
+    --contrast-back: light-dark(black, white);
+    --button-text: light-dark(white, black);
+    --highlighted-text: light-dark(#007500, green);
 }
 
 body {
@@ -9,23 +38,15 @@ body {
     font-family: "ABCWhyte";
 }
 
-h3 {
-    text-transform: uppercase;
-}
-
-main section:nth-of-type(3) ul li h4 {
-    color: var(--white);
-    text-transform: uppercase;
-}
-
 header {
-    background-color: var(--seethrough);
-    display: flex;
-    flex-direction: column;
+    background-color: var(--backg);
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
     position: fixed;
     top: 0;
     width: 100vw;
-    height: 15vh;
+    height: 9vh;
+    z-index: 5;
 }
 
 ul {
@@ -39,7 +60,7 @@ header button  {
 }
 
 header button span {
-    background-color: var(--white);
+    background-color: var(--contrast-back);
     border-radius: 10px;
     color: var(--seethrough);
     display: flex;
@@ -56,7 +77,10 @@ header label {
 header label img {
     height: 1em;
     aspect-ratio: 1;
-    filter: invert(1);
+    @media (prefers-color-scheme: dark) {
+        filter: invert(1);
+    }
+
 }
 
 header input {
@@ -64,6 +88,7 @@ header input {
     border-radius: 15px;
     border: solid 0.1em;
     border-color: var(--white);
+    grid-column-start: 1;
 }
 
 header input::placeholder {
@@ -79,17 +104,22 @@ header ul {
 }
 
 header ul li:nth-of-type(2) img {
-    filter: invert(1);
     height: 1em;
     width: auto;
     margin-right: 4em;
+    @media (prefers-color-scheme: dark) { 
+       filter: invert(1); 
+    }
+
 }
 
 header ul li:nth-of-type(3) a img, 
 header ul li:nth-of-type(4) a img {
     height: 1.5em;
     aspect-ratio: 1;
-    filter: invert(1);
+    @media (prefers-color-scheme: dark) { 
+        filter: invert(1);    
+    }
 }
 
 header ul li:nth-of-type(4) a img {
@@ -105,14 +135,17 @@ h1 {
 }
 
 footer {
-    background-color: black;
-    color: white;
+    background-color: var(--backg);
+    color: var(--p-text);
 }
 
 footer h2 {
     font-size: 1.4em;
     font-weight: 700;
     margin: 1em;
+    @media (min-width: 35rem) {
+        margin-left: 80%;
+    }
 }
 
 footer p {
@@ -120,46 +153,47 @@ footer p {
     margin: 0;
 }
 
-footer section:nth-of-type(1) {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
+footer section:first-child {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
-footer section:nth-of-type(1) img {
-    margin-right: 3em;
+footer section:first-child img {
     height: 1.2em;
     aspect-ratio: 1;
-    filter: invert(1);
     margin: 0.5em;
     margin-left: 2em;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    @media (prefers-color-scheme: dark) {
+        filter: invert(1);
+    }
+    @media (min-width: 35rem) {
+        margin-right: 0;
+        margin-left: 80%;
+    }
 }
 
-footer section:nth-of-type(2) img {
-    height: 1.2em;
-    aspect-ratio: 1;
-    filter: invert(1);
-    margin-left: 2em;
+footer section:first-child ul {
+    margin: 0;
+    padding: 0;
 }
 
-footer section:nth-of-type(2) {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-}
-
-footer section:nth-of-type(2) ul {
-    display: flex;
-    flex-direction: column;
+footer section:first-child ul {
+    grid-column-start: 2;
+    grid-column-end: -1;
 }
 
 footer details {
     margin-left: 3em;
     margin-top: 1em;
+    @media (min-width: 35rem) {
+        margin-left: 20%;
+    }
 }
 
 footer summary {
-    font-size: 0.8em;
+    font-size: 1em;
     display: block;
 }
 
@@ -170,59 +204,87 @@ footer details ul li {
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    padding-top: 0.5em;
-    padding-bottom: 0.5em;
-    padding-left: 1em;
 }
 
 footer details ul li a {
     text-decoration: none;
     color: var(--white);
+    font-weight: 100;
+    font-size: 0.8em;
+    padding: 0.5em;
 }
 
-footer nav section:nth-of-type(4) ul {
+footer nav section:nth-of-type(1) ul {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
+    margin-top: 2em;
+    @media (min-width: 35rem) {
+        margin-left: 10%;
+        margin-right: 10%;
+    }
 }
 
-footer nav section:nth-of-type(4) ul li img {
-    height: 3em;
+footer nav section:nth-of-type(1) ul li img {
+    @media (prefers-color-scheme: dark){
+        filter: invert(1);
+    }
+}
+
+footer nav details ul li img {
+    height: 1em;
     aspect-ratio: 1;
     margin: 0;
+    margin-right: 5em;
+    @media (prefers-color-scheme: dark) {
+        filter: invert(1);
+    }
 }
 
-footer nav section:nth-of-type(5) ul {
+footer nav section:nth-of-type(2) ul {
     list-style: disc;
     display: flex;
     flex-direction: row;
     margin-top: 0;
     margin-bottom: 0;
+    @media (min-width: 35rem) {
+        margin-left: 17%;
+    }
 }
 
-footer nav section:nth-of-type(5) ul li a {
+footer nav section:nth-of-type(2) ul li a {
     text-decoration: none;
     color: var(--white);
     font-size: 0.7em;
     margin-right: 3em;
 }
 
-footer nav section:nth-of-type(6) {
+footer nav section:nth-of-type(3) {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
+    margin-top: 2em; 
+    margin-right: 2em;
 }
 
-footer section:nth-of-type(6) img {
+footer section:nth-of-type(3) img {
     height: 1.2em;
     aspect-ratio: 1;
-    filter: invert(1);
     margin-left: 2em;
+    @media (prefers-color-scheme: dark) { 
+        filter: invert(1);    
+    }
 }
 
-footer nav section:nth-of-type(6) button {
-    margin-right: 8em;
+footer nav section:nth-of-type(3) button {
+    margin-right: 25%;
     border: none;
+    left: 1em;
     color: var(--white);
     background-color: var(--seethrough);
+    padding: 0;
+    @media (min-width: 35rem) {
+        margin-right: 50%;
+    }
 }
