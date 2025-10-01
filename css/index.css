@@ -1,31 +1,94 @@
-@font-face {
-    font-family: "ABCWhyte";
-    src: url("../fonts/ABCWhyte-Light.woff2");
+header dialog {
+    position: fixed;
+    height: 100vh;
+    width: 25em;
+    margin: 0;
+    border: none;
+    top: 9vh;
+    background-color: var(--backg);
+}
+
+header dialog button h2 {
     font-weight: 100;
+    font-size: 2em;
+    margin-top: 0;
+    margin-bottom: 1em;
+    text-align: end;
+    width: 70vw;
 }
 
-@font-face {
-    font-family: "ABCWhyte";
-    src: url("../fonts/ABCWhyte-Regular.woff2");
-    font-weight: 400;
+header dialog ul:nth-of-type(1) {
+    border-bottom: solid 1px;
 }
 
-@font-face {
-    font-family: "ABCWhyte";
-    src: url("../fonts/ABCWhyte-Medium.woff2");
+header dialog ul:nth-of-type(1) h2 {
+    font-size: 1em;
+    text-transform: uppercase;
+    font-weight: 100;
+    color: var(--p-text);
+    text-decoration: none;
+    margin: 0;
+}
+
+header dialog ul:nth-of-type(1) a {
+    text-decoration: none;
+}
+
+header dialog ul:nth-of-type(1) h2:hover {
+    border-bottom: solid 4px;
+}
+
+header dialog ul:nth-of-type(2) {
+    flex-direction: column;
+    align-items: start;
+    margin: 0;
+    border-bottom: solid 1px;
+}
+
+header dialog ul:nth-of-type(2) a {
+    text-decoration: none;
+}
+
+header dialog ul:nth-of-type(2) h3 {
+    font-size: 2em;
+    margin: 0.3em;
+    font-weight: 100;
+    color: var(--p-text);
+}
+
+header dialog ul:nth-of-type(2) h3:hover {
     font-weight: 500;
 }
 
-@font-face {
-    font-family: "ABCWhyte";
-    src: url("../fonts/ABCWhyte-Bold.woff2");
-    font-weight: 700;
+header dialog ul:nth-of-type(3) {
+    flex-direction: column;
+    align-items: start;
 }
 
-:root {
-    --seethrough:#fff0;
-    --white:white;
-    --black:black;
+header dialog ul:nth-of-type(3) a {
+    text-decoration: none;
+}
+
+header dialog ul:nth-of-type(3) h3 {
+    color: var(--p-text);
+    font-weight: 100;
+    font-size: 1em;
+    margin: 0.3em;
+}
+
+header dialog ul:nth-of-type(3) h3:hover {
+    font-weight: 500;
+}
+
+header dialog label {
+    margin: 0;
+    padding: 3em;
+}
+
+header dialog input {
+    padding: 1em;
+    width: 20em;
+    margin-top: 3em;
 }
 
 main section:nth-of-type(1) ul {
@@ -33,30 +96,45 @@ main section:nth-of-type(1) ul {
     flex-direction: row;
     overflow-x: auto;
     scroll-snap-type: x mandatory;
+    padding: 0;
 }
 
 main section:nth-of-type(1) ul li {
     scroll-snap-align: center;
     position: relative;
+    display: flex;
+    justify-content: center;
 }
 
 main section:nth-of-type(1) ul img {
-    height: 80vh;
+    height: 70vh;
     width: 100vw;
+    object-fit: cover;
 }
 
-main section:nth-of-type(1) ul h4 {
+main section:nth-of-type(1) ul h3 {
     position: absolute;
     bottom: 3em;
     font-size: 1.5em;
-    color: var(--white);
-    /* text-align: center; */
-    margin: 0 auto;
-    left: 50%;
-    right: 50%;
+    color: var(--label-text);
+    margin: 0;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    left: 7em;
+    @media (min-width: 35rem) {
+        font-size: 3em;
+        left: 45%;
+    }
 }
 
-main section:nth-of-type(2) h2 {
+main section:nth-of-type(1) ul li:nth-of-type(2) h3 {
+    left: 5em;
+    @media (min-width: 35rem) {
+        left: 40%;
+    }
+}
+
+main section:nth-of-type(1) h2, main section:nth-of-type(2) h2 {
     display: none;
 }
 
@@ -65,30 +143,54 @@ main section:nth-of-type(2) ul {
     flex-direction: row;
     overflow-x: auto;
     scroll-snap-type: x mandatory;
-    margin: 0;
+    margin: 0;padding: 0;
+    @media (min-width: 35rem) {
+        justify-content: space-evenly;
+    }
 }
 
 main section:nth-of-type(2) ul li {
     scroll-snap-align: center;
-    display: relative;
+    position: relative;
 }
 
-main section:nth-of-type(2) ul h4 {
+main section:nth-of-type(2) ul h3 {
     position: absolute;
-    color: var(--white);
+    color: var(--label-text);
     text-decoration: none;
     font-size: 1em;
-    max-width: 4em;
+    max-width: 6em;
     text-align: center;
-    margin: 0 auto;
+    top: 0;
+    left: 2.3em;
+    top: 5em;
+    @media (min-width: 35rem) {
+        font-size: 1.5em;
+    }
+}
+
+main section:nth-of-type(2) ul li:nth-of-type(1) h3 {
+    left: 3.5em;
+}
+
+main section:nth-of-type(2) ul li:nth-of-type(3) h3, 
+main section:nth-of-type(2) ul li:nth-of-type(6) h3 {
+    left: 3em;
+}
+
+main section:nth-of-type(2) ul li:nth-of-type(4) h3 {
+    left: 2em;
 }
 
 main section:nth-of-type(2) ul li img {
     height: 10em;
     aspect-ratio: 1;
+    @media (min-width: 35rem) {
+        height: 15em;
+    }
 }
 
-main section:nth-of-type(3) h3 {
+main section:nth-of-type(3) h2 {
     font-size: 3em;
     font-weight: 400;
     margin: 0;
@@ -104,9 +206,17 @@ main section:nth-of-type(3) p {
     padding-right: 1em;
 }
 
-main section:nth-of-type(3) h3 img {
+main section:nth-of-type(3) ul li h3 {
+    color: var(--label-text);
+    text-transform: uppercase;
+}
+
+main section:nth-of-type(3) h2 img {
     height: 1em;
     aspect-ratio: 1;
+    @media (prefers-color-scheme: dark) {
+        filter: invert(1);
+    }
 }
 
 main section:nth-of-type(3) ul {
@@ -114,6 +224,9 @@ main section:nth-of-type(3) ul {
     grid-template-columns: 1fr 1fr;
     grid-gap: 0.5em;
     padding: 0;
+    @media (min-width: 35rem) {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
 }
 
 main section:nth-of-type(3) ul a {
@@ -122,9 +235,12 @@ main section:nth-of-type(3) ul a {
 
 main section:nth-of-type(3) ul li img {
     height: 15em;
+    @media (min-width: 35rem) {
+        height: 25em;
+    }
 }
 
-main section:nth-of-type(3) ul li h4 {
+main section:nth-of-type(3) ul li h3 {
     bottom: 0.5em;
     font-weight: 700;
     left: 0.5em;
@@ -134,30 +250,44 @@ main section:nth-of-type(3) ul li h4 {
     text-decoration: none;
 }
 
-main section:nth-of-type(3) h5 {
-    background-color: var(--black);
+main section:nth-of-type(3) a h4 {
+    background-color: var(--contrast-back);
     border-radius: 30px;
-    color: var(--white);
+    color: var(--button-text);
     font-size: 1em;
-    margin-left: 7em;
-    margin-right: 7em;
+    margin-left: 20%;
+    margin-right: 20%;
     padding: 1em;
-    text-decoration-color: var(--white);
+    text-align: center;
+    text-decoration: none;
     text-transform: uppercase;
+    @media (min-width: 35rem) {
+        margin-left: 40%;
+        margin-right: 40%;
+    }
 }
 
 main section:nth-of-type(4) ul {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: 0.5em;
+    padding: 0;
+    margin: 1em;
+    @media (min-width: 35rem) {
+        margin-left: 20em;
+        margin-right: 20em;
+    }
 }
 
-main section:nth-of-type(4) h3 img {
+main section:nth-of-type(4) h2 img {
     height: 1em;
     aspect-ratio: 1;
+    @media (prefers-color-scheme: dark) {
+        filter: invert(1);
+    }
 }
 
-main section:nth-of-type(4) h3 {
+main section:nth-of-type(4) h2 {
     font-size: 3em;
     font-weight: 400;
     margin: 0;
@@ -170,33 +300,47 @@ article {
     flex-direction: column;
 }
 
-article h4:nth-of-type(1) {
+article h3:nth-of-type(1) {
     order: 2;
 }
 
-article h4:nth-of-type(2) {
+article h3:nth-of-type(2) {
     order: 3;
 }
 
 article img {
     width: 40vw;
     margin-bottom: 0.3em;
+    @media (min-width: 35rem) {
+        width: 20vw;
+    }
 }
 
-article h4 {
+article h3 {
     font-size: 0.8em;
     font-weight: 400;
     margin: 0.3em;
 }
 
-article h4:nth-of-type(2) {
+article h3:nth-of-type(2) {
     font-weight: 700;
+}
+
+section:nth-of-type(5) h2 {
+    display: none;
 }
 
 section:nth-of-type(5) a img{
     max-width: 100vw;
     height: auto;
     margin: 0;
+    @media (min-width: 35rem) {
+        content: url(../images/bershka-music-wide.jpg);
+    }
+}
+
+section:nth-of-type(6) h2 {
+    display: none;
 }
 
 section:nth-of-type(6) {
@@ -204,10 +348,27 @@ section:nth-of-type(6) {
     flex-direction: column;
     align-items: center;
     margin: 0;
+    @media (min-width: 35rem) {
+        flex-direction: row;
+    }
+}
+
+section:nth-of-type(6) a {
+    position: relative;
+}
+
+section:nth-of-type(6) a h3 {
+    position: absolute;
+    color: var(--label-text);
+    bottom: 0.2em;
+    left: 1em;
 }
 
 section:nth-of-type(6) a img{
     width: 90vw;
     padding: 0.3em;
     border-radius: 10px;
+    @media (min-width: 35rem) {
+        width: 48vw;
+    }
 }
