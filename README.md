@@ -80,15 +80,8 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 <details>
   <summary>uitwerken na afloop 3<sup>e</sup> werkgroep</summary>
 
-  ### de hele pagina: 
+  ### de hele pagina + dynamisch deel: 
   [Miro board met breakdown schetsen](https://miro.com/app/board/uXjVJLYz8sk=/?share_link_id=196447404776)
-
-  ### dynamisch deel (bijv menu): 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van een dynamisch deel">
-
-  ### wellicht nog een dynamisch deel (bijv filter): 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van nog een dynamisch deel">
-
 </details>
 
 
@@ -156,21 +149,17 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   ### Agenda voor meeting
   samen met je groepje opstellen
 
-  | student 1      | student 2          | student 3    | student 4        |
+  | Freddy         | Tin                | Aminata      | Amber            |
   | ---            | ---                | ---          | ---              |
-  | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-  | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
+  | felxbox vs grid| @media en dark mode| is er niet   | is er niet       |
+  |                |                    |              |                  |
   | ...            | ...                | ...          | ...              |
 
 
   ### Verslag van meeting
-  hier na afloop snel de uitkomsten van de meeting vastleggen
-
-  - punt 1
-  - punt 2
-  - nog een punt
-- ...
-
+  zorg dat ik voornamelijk grid gebruik
+  kleine foutjes corrigeren
+  zorg dat je ook een keer slaapt
 </details>
 
 
@@ -183,7 +172,12 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken na test in 9<sup>e</sup> werkgroep</summary>
 
   ### Bevindingen
-  Lijst met je bevindingen die in de test naar voren kwamen (geef ook aan wat er verbeterd is):
+  <ul>
+    <li>Geen dubbele links meer</li>
+    <li>Elke sectie heeft nu een heading</li>
+    <li>De website heeft een light en dark modus</li>
+    <li>De website is responsive</li>
+  </ul>
 
 </details>
 
@@ -203,21 +197,15 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   ### Agenda voor meeting
   samen met je groepje opstellen
 
-  | student 1      | student 2          | student 3    | student 4        |
-  | ---            | ---                | ---          | ---              |
-  | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-  | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-  | ...            | ...                | ...          | ...              |
-
+  Ik was alleen           
 
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
 
-  - punt 1
-  - punt 2
-  - nog een punt
-  - ...
-
+  - Geef de carousels scroll buttons
+  - fix de button met onnodige margin
+  - zorg dat elke section een h2 heeft
+  - sommige dingen mag je van online overnemen met de bron erbij
 </details>
 
 
@@ -254,12 +242,9 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 <details open>
   <summary>continu bijhouden terwijl je werkt</summary>
 
-  Nb. Wees specifiek ('css-tricks' als bron is bijv. niet specifiek genoeg). 
-  Nb. ChatGpT en andere AI horen er ook bij.
-  Nb. Vermeld de bronnen ook in je code.
-
-  1. bron 1
-  2. bron 2
-  3. ...
+  1. [Scroll button](https://developer.chrome.com/blog/carousels-with-css#add_scroll_buttons_with_scroll-button)
+  2. [Anchor Positioning](https://developer.chrome.com/blog/anchor-positioning-api)
+  3. [Anchor werkt niet?](https://www.oddbird.net/2025/01/29/anchor-position-validity/#:~:text=Check%20that%20your%20anchor%20is,parent%20to%20the%20positioned%20element)
+  4. Met behulp van een vriend kreeg ik uiteindelijk de anchoring zoals het hoort
 
 </details>
