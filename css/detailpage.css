@@ -4,25 +4,42 @@ header {
     height: 5vh;
 }
 
+header nav {
+    @media (min-width: 35rem) {
+        width: 100%;
+    }
+}
+
+header nav ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100vw;
+    padding: 0;
+    margin: 0;
+}
+
+header nav ul li a img,
+header nav ul li button img {
+    height: 2vh;
+    width: auto;
+    @media (prefers-color-scheme: dark) {
+        filter: invert(1);
+    }
+}
+/* 
 header img:nth-of-type(1) {
     height: 1em;
-    grid-column-start: 1;
-    grid-column-end: 2;
     @media (prefers-color-scheme: dark) {
         filter: invert(1);
     }
 }
 
 header nav ul li:nth-of-type(2) {
-    grid-column-start: 2;
-    grid-column-end: 3;
-}
 
-header nav ul li:nth-of-type(3),
-header nav ul li:nth-of-type(4) {
-    grid-column-start: 3;
-    grid-column-end: -1;
-}
+} */
+
+
 
 main {
     @media (min-width: 35rem) {
@@ -43,8 +60,8 @@ main section:nth-of-type(1) h2 {
     display: none;
 }
 
-main section:nth-of-type(1) img {
-    width: 100%;
+main section:nth-of-type(1) ul li img {
+    width: 100vw;
     @media (min-width: 35rem) {
         max-width: 30vw;
         height: 100vh;
@@ -52,14 +69,16 @@ main section:nth-of-type(1) img {
     }
 }
 
-main section:nth-of-type(1) img:nth-of-type(1) {
+main section:nth-of-type(1) ul li img:nth-of-type(1) {
+    width: 100vw;
     @media (min-width: 35rem) {
         grid-column-start: 1;
         grid-column-end: 2;
     }
 }
 
-main section:nth-of-type(1) img:nth-of-type(2) {
+main section:nth-of-type(1) ul li img:nth-of-type(2) {
+    width: 100vw;
     @media (min-width: 35rem) {
         grid-column-start: 2;
         grid-column-end: 3;
@@ -88,16 +107,24 @@ main section:nth-of-type(1) button {
     aspect-ratio: 1;
     border-radius: 50%;
     position: fixed;
-    bottom: 8em;
-    right: 2em;
     padding: 0.5em;
     z-index: 1;
     background-color: var(--backg);
+    bottom: 24vh;
+    right: 5vw;
+    @media(min-width: 35rem) {
+        bottom: 1vh;
+        right: 40vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 }
 
 main section:nth-of-type(1) button img {
     @media (prefers-color-scheme: dark) {
         filter: invert(1);
+        height: 1.5em;
     }
 }
 
@@ -106,13 +133,16 @@ main section:nth-of-type(3) {
     position: relative;
     z-index: 2;
     background-color: var(--backg);
-    top: 80vh;
+    top: 92vh;
+    /* grid-column-start: 0;
+    grid-column-end: -1; */
     @media (min-width:35rem) {
         grid-column-start: 6;
         grid-column-end: -1;
         top: 5vh;
     }
 }
+
 
 main section:nth-of-type(2) {
     display: grid;
