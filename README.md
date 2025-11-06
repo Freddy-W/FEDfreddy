@@ -218,23 +218,23 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken voor eindgesprek</summary>
 
   ### Je uitkomst - karakteristiek screenshots:
-  <img src="images/screenshot-endresult" width="375px" alt="uitomst opdracht 1">
+  <img src="images/screenshot-endresult.png" width="375px" alt="uitomst opdracht 1">
 
 
   ### Dit ging goed/Heb ik geleerd: 
   Korte omschrijving met plaatjes
 
   Soms is het een goed idee om hulp te vragen, ook al wil je het graag zelf uitzoeken.
-  <img src="images/achor-help.jpg" width="375px" alt="top">
+  <img src="images/achor-help.png" width="375px" alt="top">
 
   Carousels zijn heel erg makkelijk :D
-  <img src="images/carousels.jpg" width="375px" alt="top">
+  <img src="images/carousels.png" width="375px" alt="top">
 
   ### Dit was lastig/Is niet gelukt:
   Korte omschrijving met plaatjes
 
   Voor scroll buttons moet je de tijd nemen
-  <img src="images/noupdown.jpg" width="375px" alt="bummer">
+  <img src="images/noupdown.png" width="375px" alt="bummer">
 </details>
 
 
